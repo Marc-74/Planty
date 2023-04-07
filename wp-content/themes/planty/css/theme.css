@@ -3,18 +3,11 @@ body * {
    font-family: 'Syne', sans-serif;
 }
 
-
 /* header */
 
-#site-header{
-    position: absolute;
-    width: 1440px;
-    height: 80px;
 
-}
 
 li.menu-item a {
-
     color: #313332 !important;
  
   
@@ -40,7 +33,6 @@ li.menu-item.current-menu-item a {
     color: #ffffff !important;
    background-color: #dc9f96;
 
-   height: 80px;
  
  
   
@@ -64,3 +56,4 @@ li.menu-item.current-menu-item a {
     color: #000000;
     background-color: #ffffff !important;
  }
+
