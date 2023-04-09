@@ -1,49 +1,27 @@
-
 body * {
-   font-family: 'Syne', sans-serif;
+    font-family: 'Syne', sans-serif;
 }
 
 /* header */
 
-
-
 li.menu-item a {
     color: #313332 !important;
- 
-  
     text-align: center;
     font-weight: 700;
     font-size: 16px;
-  
     display: flex;
-  
     align-items: center;
     color: #000000;
-height: 19px;
-
-
-   
-  
-  
+    height: 19px;
 }
 
 li.menu-item a:hover,
 li.menu-item.current-menu-item a {
 
     color: #ffffff !important;
-   background-color: #dc9f96;
-
- 
- 
-  
-  
- 
-  
-
-
-   
-  
- 
+    background-color: #dc9f96;
+    width: 236px;
+    height: 80px;
 }
 
 
@@ -55,5 +33,93 @@ li.menu-item.current-menu-item a {
     text-align: center;
     color: #000000;
     background-color: #ffffff !important;
- }
+}
 
+
+/* border bottom style */
+
+.elementor-45 .elementor-element.elementor-element-e02bf7d:not(.elementor-motion-effects-element-type-background),
+.elementor-45 .elementor-element.elementor-element-e02bf7d>.elementor-motion-effects-container>.elementor-motion-effects-layer {
+
+    border-bottom: 8px solid #c6c3c1;
+    border-bottom-left-radius: 50% 9%;
+    border-bottom-right-radius: 50% 9%;
+}
+
+.elementor-45 .elementor-element.elementor-element-6acdd11:not(.elementor-motion-effects-element-type-background),
+.elementor-45 .elementor-element.elementor-element-6acdd11>.elementor-motion-effects-container>.elementor-motion-effects-layer {
+
+
+    border-bottom-left-radius: 50% 9%;
+    border-bottom-right-radius: 50% 9%;
+}
+
+
+/* ce qu'ils en pensent */
+
+.elementor-45 .elementor-element.elementor-element-e9b06a9:not(.elementor-motion-effects-element-type-background)>.elementor-widget-wrap,
+.elementor-45 .elementor-element.elementor-element-e9b06a9>.elementor-widget-wrap>.elementor-motion-effects-container>.elementor-motion-effects-layer {
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+
+}
+
+/* formulaire page nous rencontrer */
+
+input.wpcf7-submit {
+
+    background-color: #25d67d;
+    border-radius: 5px;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 0.0333em;
+    line-height: 1.25;
+    margin: 80px;
+    opacity: 1;
+    padding: 1.1em 1.44em;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: opacity 0.15s linear;
+    margin-top: auto;
+    width: 198px;
+    height: 55px;
+
+}
+
+.wpcf7-textarea {
+
+    height: 237px;
+    line-height: 1.5;
+    width: 100%;
+
+}
+
+/* formulaire de commande */
+
+.form-group{
+	
+	display:flex;
+	flex-direction: row;
+	column-gap: 20px;
+	justify-content: center;
+	
+}
+
+.border-middle{
+	
+    border: 1px solid #fff
+		
+}
+
+.h3{
+
+    color: #ffffff;
+}

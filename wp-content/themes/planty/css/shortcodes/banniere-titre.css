@@ -13,6 +13,7 @@
     font-size: 48px;
     font-weight: 800;
     text-transform: uppercase;
+    font-family: "syne";
 }
 .banniere-titre:before{
     content: "";
@@ -30,4 +31,6 @@
     margin: 0;
     padding: 10px 20px;
     text-align: center;
+    font-family: syne;
+    font-weight: 800;
 }
