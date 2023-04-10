@@ -8,6 +8,7 @@ function theme_enqueue_styles()
 
     wp_enqueue_style('banniere-titre-shortcode', get_stylesheet_directory_uri() . '/css/shortcodes/banniere-titre.css', array(), filemtime(get_stylesheet_directory() . '/css/shortcodes/banniere-titre.css'));
 
+    
 
 }
 ?>
@@ -46,5 +47,107 @@ function banniere_titre_func($atts)
 
     return $output;
 }
+
+?>
+
+<?php 
+
+
+function button_quantity_shortcode() {
+    ob_start(); ?>
+    <style>
+      .button-group {
+        display: flex;
+        align-items: center;
+        padding-left: 18px;
+        padding-top: -120px;
+   
+      }
+  
+      button.quantity {
+        background-color: #fff;
+        border: none;
+        color: black;
+        padding: 10px 24px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        font-weight: 400;
+        cursor: pointer;
+        position: relative;
+       height: 61px;
+       border-radius: 8px 0 0 8px;
+       font-family: 'syne';
+      }
+  
+      button.quantity span {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        background-color: #e0b9b4;
+        border: none;
+        text-align: center;
+        font-size: 20px;
+        font-weight: 400;
+        cursor: pointer;
+        font-family: 'syne';
+      }
+  
+      button.quantity span:first-child {
+        top: 0;
+        color: white;
+        border-radius: 0 8px 0 0;
+       margin-left: 24px;
+       font-family: 'syne';
+       font-weight: 400px;
+       font-size: 20px;
+      
+      }
+  
+      button.quantity span:last-child {
+        bottom: 0;
+        color: white;
+        border-radius: 0 0 8px 0;
+        margin-left: 24px;
+        font-family: 'syne';
+      }
+  
+      button.ok {
+        background-color: #e0b9b4;
+        border: none;
+        color: white;
+        padding: 10px 24px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        margin-left: 10px;
+        width: 120px;
+        height: 62px;
+        border-radius: 8px;
+        margin-left: 50px;
+        font-family: 'syne';
+      
+       
+      }
+    </style>
+  
+    <div class="button-group">
+      <button class="quantity">
+        0
+        <span>+</span>
+        <span>-</span>
+      </button>
+      <button class="ok">OK</button>
+    </div>
+    <?php
+    return ob_get_clean();
+  }
+  add_shortcode('button_quantity', 'button_quantity_shortcode');
+
+
 
 ?>

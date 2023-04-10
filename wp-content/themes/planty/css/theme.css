@@ -1,18 +1,36 @@
 body * {
     font-family: 'Syne', sans-serif;
+  
 }
+
+/* logo */
+body:not(.enable-search-modal) .site-logo img {
+    margin: auto;
+    width: 192px;
+  
+}
+
 
 /* header */
 
+
+.header-inner{
+    height: 80px;
+    width: 1440px;
+}
+
+
 li.menu-item a {
-    color: #313332 !important;
+   
+    display: block;
     text-align: center;
-    font-weight: 700;
-    font-size: 16px;
-    display: flex;
-    align-items: center;
-    color: #000000;
-    height: 19px;
+    height: 80px;
+    line-height: 80px;
+    width: 256px;
+    background-color: #fff;
+  color: #000000;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
 }
 
 li.menu-item a:hover,
@@ -20,8 +38,14 @@ li.menu-item.current-menu-item a {
 
     color: #ffffff !important;
     background-color: #dc9f96;
-    width: 236px;
+    width: 256px;
     height: 80px;
+    text-decoration: none;
+  
+    
+   
+  
+    
 }
 
 
@@ -71,8 +95,8 @@ li.menu-item.current-menu-item a {
 /* formulaire page nous rencontrer */
 
 input.wpcf7-submit {
-
-    background-color: #25d67d;
+font-family: 'syne';
+    background-color: #000000;
     border-radius: 5px;
     color: #ffffff;
     cursor: pointer;
@@ -81,7 +105,7 @@ input.wpcf7-submit {
     font-weight: 400;
     letter-spacing: 0.0333em;
     line-height: 1.25;
-    margin: 80px;
+  
     opacity: 1;
     padding: 1.1em 1.44em;
     text-align: center;
@@ -91,7 +115,11 @@ input.wpcf7-submit {
     margin-top: auto;
     width: 198px;
     height: 55px;
-
+    align-items: center;
+    margin-left: -120px;
+    margin-top: 45px;
+  
+  
 }
 
 .wpcf7-textarea {
@@ -99,8 +127,17 @@ input.wpcf7-submit {
     height: 237px;
     line-height: 1.5;
     width: 100%;
+    font-family: 'syne';
+    font-size: 16px;
+    font-weight: 700;
+
+   
 
 }
+
+
+
+
 
 /* formulaire de commande */
 
@@ -108,18 +145,35 @@ input.wpcf7-submit {
 	
 	display:flex;
 	flex-direction: row;
-	column-gap: 20px;
+	column-gap: 50px;
 	justify-content: center;
+    color: #ffffff;
+    border-radius: 17px;
+    gap: 50px;
+    font-family: 'syne';
+    font-size: 16px;
+    font-weight: 700;
+
+ 
+    
+   
 	
 }
 
 .border-middle{
 	
-    border: 1px solid #fff
+    border: 1px solid #fff;
+    margin-top: 100px;
+    margin-bottom: 135px;
 		
 }
 
-.h3{
 
-    color: #ffffff;
+
+/* images page commader */
+
+.elementor-widget-image img {
+    vertical-align: middle;
+    display: inline-block;
+    width: 230px;
 }
