@@ -85,7 +85,7 @@ function button_quantity_shortcode() {
         position: absolute;
         width: 30px;
         height: 30px;
-        background-color: #e0b9b4;
+        background-color: #dc9f96;
         border: none;
         text-align: center;
         font-size: 20px;
@@ -122,7 +122,7 @@ function button_quantity_shortcode() {
         text-decoration: none;
         display: inline-block;
         font-size: 16px;
-        font-weight: bold;
+        font-weight: 400;
         cursor: pointer;
         margin-left: 10px;
         width: 120px;
@@ -137,7 +137,7 @@ function button_quantity_shortcode() {
   
     <div class="button-group">
       <button class="quantity">
-        0
+       0
         <span>+</span>
         <span>-</span>
       </button>
@@ -151,3 +151,20 @@ function button_quantity_shortcode() {
 
 
 ?>
+
+<?php 
+function wpb_custom_new_menu() {
+  register_nav_menu('primary',__( 'Menu Rencontre' ));
+}
+add_action( 'init', 'wpb_custom_new_menu' );
+
+
+
+function add_menu_logo() {
+  echo '<div class="menu-logo"><a href="' . home_url() . '"><img src="' . get_stylesheet_directory_uri() . '/logo.png" alt="Logo" /></a></div>';
+}
+add_action( 'wp_nav_menu', 'add_menu_logo' );
+
+?>
+
+

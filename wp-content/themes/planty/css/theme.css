@@ -1,63 +1,58 @@
 body * {
     font-family: 'Syne', sans-serif;
-  
+
 }
 
+
+
 /* logo */
-body:not(.enable-search-modal) .site-logo img {
-    margin: auto;
+
+.menu-logo {
+
     width: 192px;
-  
+    height: 19px;
+    display: flex;
+    float: left;
+    padding-top: 26px;
+
 }
 
 
 /* header */
 
-
-.header-inner{
-    height: 80px;
-    width: 1440px;
-}
-
-
-li.menu-item a {
-   
-    display: block;
-    text-align: center;
-    height: 80px;
-    line-height: 80px;
-    width: 256px;
-    background-color: #fff;
-  color: #000000;
+.nav-links {
+    
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
     text-decoration: none;
-    transition: background-color 0.3s ease-in-out;
+   color: #000000;
+    column-gap: 100px;
+    padding-top: 30px;
+    padding-right: 60px;
+
 }
 
-li.menu-item a:hover,
-li.menu-item.current-menu-item a {
+
+.nav-links a:hover {
 
     color: #ffffff !important;
     background-color: #dc9f96;
-    width: 256px;
+    display: block;
+    width: 236px;
     height: 80px;
-    text-decoration: none;
-  
-    
-   
-  
-    
-}
-
-
-
-/* footer */
-
-#site-footer {
-    padding: 20px;
     text-align: center;
-    color: #000000;
-    background-color: #ffffff !important;
+    line-height: 80px;
+    transition: all 0.15s linear;
+
 }
+
+a {
+    text-decoration: none;
+    
+}
+
 
 
 /* border bottom style */
@@ -78,6 +73,14 @@ li.menu-item.current-menu-item a {
     border-bottom-right-radius: 50% 9%;
 }
 
+/* bordure style page rencontrer */
+
+.elementor-50 .elementor-element.elementor-element-187574f:not(.elementor-motion-effects-element-type-background) {
+
+   
+    border-bottom-left-radius: 60% 9%;
+    border-bottom-right-radius: 60% 9%;
+}
 
 /* ce qu'ils en pensent */
 
@@ -94,34 +97,6 @@ li.menu-item.current-menu-item a {
 
 /* formulaire page nous rencontrer */
 
-input.wpcf7-submit {
-font-family: 'syne';
-    background-color: #000000;
-    border-radius: 5px;
-    color: #ffffff;
-    cursor: pointer;
-    display: inline-block;
-    font-size: 15px;
-    font-weight: 400;
-    letter-spacing: 0.0333em;
-    line-height: 1.25;
-  
-    opacity: 1;
-    padding: 1.1em 1.44em;
-    text-align: center;
-    text-decoration: none;
-    text-transform: uppercase;
-    transition: opacity 0.15s linear;
-    margin-top: auto;
-    width: 198px;
-    height: 55px;
-    align-items: center;
-    margin-left: -120px;
-    margin-top: 45px;
-  
-  
-}
-
 .wpcf7-textarea {
 
     height: 237px;
@@ -130,50 +105,86 @@ font-family: 'syne';
     font-family: 'syne';
     font-size: 16px;
     font-weight: 700;
-
-   
+    border-radius: 7px;
 
 }
 
+.wpcf7 input[type="email"]{
 
-
+   height: 71px;
+   border-radius: 7px;
+}
 
 
 /* formulaire de commande */
 
-.form-group{
-	
-	display:flex;
-	flex-direction: row;
-	column-gap: 50px;
-	justify-content: center;
+.form-group {
+
+    display: flex;
+    flex-direction: row;
+    column-gap: 50px;
+    justify-content: center;
     color: #ffffff;
     border-radius: 17px;
     gap: 50px;
     font-family: 'syne';
     font-size: 16px;
     font-weight: 700;
-
- 
-    
-   
-	
 }
 
-.border-middle{
-	
+h2 {
+
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.border-middle {
+
     border: 1px solid #fff;
-    margin-top: 100px;
-    margin-bottom: 135px;
-		
+    margin-top: 70px;
+    margin-bottom: 113px;
+
 }
 
 
+input[type="text"] {
 
-/* images page commader */
+    width: 520px;
+    border-radius: 7px;
+    margin-top: 15px;
+    height: 71px;
+   
+}
 
-.elementor-widget-image img {
-    vertical-align: middle;
-    display: inline-block;
-    width: 230px;
+input[type="submit"]{
+
+  
+    width: 198px;
+    height: 55px;
+    margin-left: -150px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'syne';
+    margin-top: 25px;
+   
+}
+
+label {
+    display: block;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0 0 0.5rem 0;
+    font-family: 'syne';
+    line-height: 40px;
+}
+
+/* footer */
+
+#site-footer {
+    padding: 20px;
+    text-align: center;
+    color: #000000;
+    background-color: #ffffff !important;
+  
 }
