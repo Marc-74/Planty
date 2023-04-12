@@ -5,30 +5,26 @@ function theme_enqueue_styles()
 {
     wp_enqueue_style('parent-style', get_template_directory_uri() . '/style.css');
     wp_enqueue_style('theme-style', get_stylesheet_directory_uri() . '/css/theme.css', array(), filemtime(get_stylesheet_directory() . '/css/theme.css'));
-
     wp_enqueue_style('banniere-titre-shortcode', get_stylesheet_directory_uri() . '/css/shortcodes/banniere-titre.css', array(), filemtime(get_stylesheet_directory() . '/css/shortcodes/banniere-titre.css'));
 
-    
-
 }
+
 ?>
-
-
 
 <?php 
 
-// Je dis à wordpress que j'ajoute un shortcode 'banniere-titre'
+// Ajout d'un shortcode 'banniere-titre'
 add_shortcode('banniere-titre', 'banniere_titre_func');
-// Je génère le html retourné par mon shortcode
+// Génération du html retourné par le shortcode
 function banniere_titre_func($atts)
 {
-    //Je récupère les attributs mis sur le shortcode
+    //Récupération des attributs mis sur le shortcode
     $atts = shortcode_atts(array(
         'src' => '',
         'titre' => 'Titre'
     ), $atts, 'banniere-titre');
 
-    //Je commence à récupéré le flux d'information
+    //Récupération du flux d'information
     ob_start();
 
     if ($atts['src'] != "") {
@@ -41,7 +37,7 @@ function banniere_titre_func($atts)
         <?php
     }
 
-    //J'arrête de récupérer le flux d'information et le stock dans la fonction $output
+    //Fin de récupération du flux d'information et stockage dans la fonction $output
     $output = ob_get_contents();
     ob_end_clean();
 
@@ -49,6 +45,10 @@ function banniere_titre_func($atts)
 }
 
 ?>
+
+
+
+
 
 <?php 
 
@@ -59,7 +59,7 @@ function button_quantity_shortcode() {
       .button-group {
         display: flex;
         align-items: center;
-        padding-left: 18px;
+        padding-left: 26px;
         padding-top: -120px;
    
       }
@@ -148,9 +148,11 @@ function button_quantity_shortcode() {
   }
   add_shortcode('button_quantity', 'button_quantity_shortcode');
 
-
-
 ?>
+
+
+
+
 
 <?php 
 function wpb_custom_new_menu() {
@@ -159,11 +161,38 @@ function wpb_custom_new_menu() {
 add_action( 'init', 'wpb_custom_new_menu' );
 
 
-
 function add_menu_logo() {
   echo '<div class="menu-logo"><a href="' . home_url() . '"><img src="' . get_stylesheet_directory_uri() . '/logo.png" alt="Logo" /></a></div>';
 }
 add_action( 'wp_nav_menu', 'add_menu_logo' );
+
+?>
+
+
+<?php
+
+function image_container_shortcode() {
+  $output = '<div class="image-container">';
+  $output .= '<img src="' . get_template_directory_uri() . '/images/image_moyen.png" style="height: 100px; ">';
+  $output .= '<img src="' . get_template_directory_uri() . '/images/image_grand.png" style="height: 120px; margin-top: -20px;">';
+  $output .= '<img src="' . get_template_directory_uri() . '/images/image_moyen.png" style="height: 100px;">';
+  $output .= '<img src="' . get_template_directory_uri() . '/images/image_petit.png" style="height: 80px; margin-top: 20px;">';
+  $output .= '<img src="' . get_template_directory_uri() . '/images/image_moyen.png" style="height: 100px;">';
+  $output .= '<img src="' . get_template_directory_uri() . '/images/image_grand.png" style="height: 120px; margin-top: -20px;">';
+  $output .= '<img src="' . get_template_directory_uri() . '/images/image_petit.png" style="height: 80px; margin-top: 20px;">';
+  $output .= '<img src="' . get_template_directory_uri() . '/images/image_moyen.png" style="height: 100px;">';
+  $output .= '<img src="' . get_template_directory_uri() . '/images/image_grand.png" style="height: 120px; margin-top: -20px;">';
+  $output .= '<img src="' . get_template_directory_uri() . '/images/image_moyen.png" style="height: 100px;">';
+  $output .= '<img src="' . get_template_directory_uri() . '/images/image_petit.png" style="height: 80px; margin-top: 20px;">';
+  $output .= '<img src="' . get_template_directory_uri() . '/images/image_moyen.png" style="height: 100px;">';
+  $output .= '<img src="' . get_template_directory_uri() . '/images/image_grand.png" style="height: 120px; margin-top: -20px;">';
+  $output .= '<img src="' . get_template_directory_uri() . '/images/image_moyen.png" style="height: 100px;">';
+  $output .= '<img src="' . get_template_directory_uri() . '/images/image_petit.png" style="height: 80px; margin-top: 20px;">';
+  $output .= '</div>';
+  return $output;
+}
+add_shortcode( 'image_container', 'image_container_shortcode' );
+
 
 ?>
 
