@@ -1,12 +1,25 @@
+/* Logo */
+/* Header menu de navigation */
+/* PAGE ACCUEIL */
+/* Bordure inférieure 1 */
+/* Bordure inférieure 2 */
+/* PAGE NOUS RENCONTRER */
+/* Bordure inférieure 3 */
+/* Formulaire nous contacter */
+/* PAGE COMMANDER */
+/* Bouton quantite +/- */
+/* Formulaire de commande */
+/* Footer */
+/* Canettes */
+/* Responsive */
+
 body * {
+
     font-family: 'Syne', sans-serif;
-   
 
 }
 
-
-
-/* logo */
+/* Logo */
 
 .menu-logo {
 
@@ -15,21 +28,21 @@ body * {
     display: flex;
     float: left;
     padding-top: 16px;
+    margin-top: 8px;
 
 }
 
+/* Header menu de navigation */
 
-/* header menu de navigation */
-
-
-body.singular .entry-header{
+body.singular .entry-header {
 
     background-color: #ffffff;
     padding: 0.1rem 0;
-    
+
 }
+
 .nav-links {
-    
+
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -38,11 +51,9 @@ body.singular .entry-header{
     color: #000000;
     column-gap: 1px;
     margin-top: -5px;
-  
-   
-  
 
 }
+
 body a {
     text-decoration: none;
     color: #000000;
@@ -56,69 +67,59 @@ body a {
     height: 80px;
     text-align: center;
     line-height: 80px;
-   margin-left: -42px;
-;
+    margin-left: -42px;
+
 }
 
-.nav-links a:hover
-  {
+.nav-links a:hover {
 
     color: #ffffff;
     background-color: #dc9f96;
-   
-   
+
 }
 
-ul, ol {
+ul,
+ol {
+
     margin: 3.8rem 0rem 0rem 0rem;
+
 }
 
+/* PAGE ACCUEIL */
+/* Bordure inférieure 1 */
 
-
-/* bordure page accueil */
-
-.elementor-45 .elementor-element.elementor-element-e02bf7d:not(.elementor-motion-effects-element-type-background),
-.elementor-45 .elementor-element.elementor-element-e02bf7d>.elementor-motion-effects-container>.elementor-motion-effects-layer {
+.elementor-element-e02bf7d {
 
     border-bottom: 8px solid #c6c3c1;
     border-bottom-left-radius: 50% 9%;
     border-bottom-right-radius: 50% 9%;
 }
 
-.elementor-45 .elementor-element.elementor-element-6acdd11:not(.elementor-motion-effects-element-type-background),
-.elementor-45 .elementor-element.elementor-element-6acdd11>.elementor-motion-effects-container>.elementor-motion-effects-layer {
+/* Bordure inférieure 2 */
+
+.elementor-element-5bfcef0 {
+    
+    background-color: #ECE2DA;
+    border-bottom-left-radius: 50% 9%;
+    border-bottom-right-radius: 50% 9%;
+
+}
 
 
+/* PAGE NOUS RENCONTRER */
+/* Bordure inférieure 3 */
+
+.elementor-element-187574f {
+    background-color: #ECE2DA;
     border-bottom-left-radius: 50% 9%;
     border-bottom-right-radius: 50% 9%;
 }
 
-/* bordure page nous rencontrer */
-
-.elementor-50 .elementor-element.elementor-element-187574f:not(.elementor-motion-effects-element-type-background) {
-
-   
-    border-bottom-left-radius: 60% 9%;
-    border-bottom-right-radius: 60% 9%;
-}
-
-/* ce qu'ils en pensent */
-
-.elementor-45 .elementor-element.elementor-element-e9b06a9:not(.elementor-motion-effects-element-type-background)>.elementor-widget-wrap,
-.elementor-45 .elementor-element.elementor-element-e9b06a9>.elementor-widget-wrap>.elementor-motion-effects-container>.elementor-motion-effects-layer {
-
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 400px;
-
-}
-
-/* formulaire page nous rencontrer */
+/* Formulaire nous contacter */
 
 .wpcf7-textarea {
 
+    display: flex;
     height: 237px;
     line-height: 1.5;
     width: 100%;
@@ -129,14 +130,135 @@ ul, ol {
 
 }
 
-.wpcf7 input[type="email"]{
+.wpcf7 input[type="email"] {
 
-   height: 71px;
-   border-radius: 7px;
+    height: 71px;
+    border-radius: 7px;
 }
 
 
-/* formulaire de commande */
+body.page-id-50 input[type="submit"] {
+
+    background-color: #e0b9b4;
+    border-radius: 5px;
+    margin-left: 135px;
+    width: 198px;
+    height: 55px;
+    margin-top: 30px;
+    text-transform: capitalize;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+
+body.page-id-50 input[type="submit"]:hover {
+    
+    background-color: #c02e44;
+}
+
+label {
+    
+    display: block;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0 0 0.5rem 0;
+    font-family: 'syne';
+    line-height: 40px;
+
+}
+
+/* PAGE COMMANDER */
+/* Bouton quantite +/- */
+
+.button-group {
+    
+    display: flex;
+    align-items: center;
+    padding-left: 26px;
+
+
+}
+
+button.quantity {
+    
+    background-color: #fff;
+    border: none;
+    color: black;
+    padding: 10px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+    position: relative;
+    height: 61px;
+    border-radius: 8px 0 0 8px;
+    font-family: 'syne';
+}
+
+button.quantity span {
+    
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #dc9f96;
+    border: none;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+    font-family: 'syne';
+}
+
+button.quantity span:first-child {
+    
+    top: 0;
+    color: white;
+    border-radius: 0 8px 0 0;
+    margin-left: 24px;
+    font-family: 'syne';
+
+    font-size: 20px;
+
+}
+
+button.quantity span:last-child {
+
+    bottom: 0;
+    color: white;
+    border-radius: 0 0 8px 0;
+    margin-left: 24px;
+    font-family: 'syne';
+}
+
+button.ok {
+
+    background-color: #e0b9b4;
+    border: none;
+    color: white;
+    padding: 5px 4px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+    margin-left: 10px;
+    width: 236px;
+    height: 62px;
+    border-radius: 8px;
+    margin-left: 50px;
+    font-family: 'syne';
+
+}
+
+button.ok:hover {
+
+    background-color: #c02e44;
+}
+
+/* Formulaire de commande */
 
 .form-group {
 
@@ -152,8 +274,6 @@ ul, ol {
     font-weight: 700;
 }
 
-
-
 h2 {
 
     font-weight: 700;
@@ -168,18 +288,17 @@ h2 {
 
 }
 
-
 input[type="text"] {
 
     width: 520px;
     border-radius: 7px;
     margin-top: 15px;
     height: 71px;
-   
-}
-body.page-id-54 input[type="submit"]{
 
-  
+}
+
+body.page-id-54 input[type="submit"] {
+
     width: 198px;
     height: 55px;
     margin-left: -150px;
@@ -190,138 +309,235 @@ body.page-id-54 input[type="submit"]{
     margin-top: 25px;
     background-color: #e0b9b4;
     text-transform: capitalize;
+    text-decoration: none;
 }
 
-body.page-id-50 input[type="submit"]{
-
-    background-color: #e0b9b4;
-    border-radius: 5px;
-   margin-left: 80px;
-   width: 198px;
-   height: 55px;
-   margin-top: 30px;
-   text-transform: capitalize;
-   font-size: 15px;
+body.page-id-54 input[type="submit"]:hover {
+    background-color: #c02e44;
 }
 
-label {
-    display: block;
-    font-size: 20px;
-    font-weight: 400;
-    margin: 0 0 0.5rem 0;
-    font-family: 'syne';
-    line-height: 40px;
-  
-   
-}
 
-/* footer */
+/* Footer */
 
 #site-footer {
-    padding: 20px;
+
+    padding-bottom: 30px;
+    margin-top: 30px;
     text-align: center;
     color: #000000;
-    background-color: #ffffff !important;
-  
+    background-color: #ffffff;
+    text-decoration: none;
+
 }
 
-
-
-/* bouton commnander */
-
-.elementor-45 .elementor-element.elementor-element-ead93bd .elementor-button {
-    background-color: #DC9F96;
-    border-radius: 5px 5px 5px 5px;
-    width: 198px;
-    height: 55px;
-}
-
-
-/* fleur page nous rencontrer */
-
-.elementor-50 .elementor-element.elementor-element-ebd8fda img {
-    width: 191px;
-  
-    height: 209px;
-}
-
-
-@media (max-width: 1024px) {
-    .form-group {
-    flex-direction: column;
-    row-gap: 20px;
-    gap: 20px;
-    }
-    }
+.reduced-spacing.footer-top-hidden #site-footer {
     
-    @media (max-width: 768px) {
+    border-top-width: 0rem;
+    padding-top: 10px;
+}
+
+
+/* Canettes */
+
+.image-container {
+    
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    margin-right: 110px;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+
+}
+
+.image-container img {
+    
+    margin-right: -30px;
+    padding-bottom: 15px;
+
+}
+
+.wp-image-1490 {
+    
+    width: 2000px;
+}
+
+.page-id-50 .image-container {
+
+    background-color: #ece2da;
+}
+
+/* Responsive */
+
+
+
+@media (max-width: 768px) {
+    
     .form-group {
-    flex-direction: column;
-    row-gap: 10px;
-    gap: 10px;
-    padding: 20px; /* Ajoutez du rembourrage pour les petits écrans */
+
+        flex-direction: column;
+        row-gap: 10px;
+        gap: 10px;
+        padding: 20px;
+
     }
-    }
 
+    .nav-links {
 
-
-    /* canettes */
-
-    .image-container {
-        display: flex; /* utilise flexbox pour aligner les images */
-       justify-content: center;
-       padding-top: 50px;
-      }
-      
-      img {
-        margin-right: -15px; /* espace entre les images */
-      
-        padding-bottom: 15px;
-      
-      }
-      
-     
-        
-        
-        
-        @media (max-width: 768px) {
-       
-      
-        .nav-links {
         flex-direction: column;
         width: 100%;
-      
         left: 0;
         background-color: #f2f2f2;
         padding: 10px;
+        margin-top: -150px;
 
-        
-        }
-        .nav-links li {
+    }
+
+    .nav-links li {
+
         margin-bottom: 10px;
-        }
-        }
+        margin-left: 50px;
 
-        @media (max-width: 768px) {
-            .menu-logo {
-display: flex;
-                width: 192px;
-                height: 19px;
-             
-                float: left;
-                padding-top:0px;
-                padding-bottom: 50px;
-              
-                padding-left: 10px;
-                margin-left: 130px;
-               
-            
-            }
-            
-      
-        
-            }
-    
-            
+    }
 
-        
+    .menu-logo {
+
+        width: 192px;
+        height: 19px;
+        padding-top: 0px;
+        padding-bottom: 50px;
+        padding-left: 10px;
+        margin-left: 150px;
+        margin-top: 20px;
+
+    }
+
+    body.page-id-50 input[type="submit"] {
+
+        margin-left: 120px;
+
+    }
+
+    body.page-id-54 input[type="submit"] {
+
+        margin-left: 0px;
+
+    }
+
+    .reduced-spacing.footer-top-hidden #site-footer {
+
+        border-top-width: 0rem;
+        padding-top: 10px;
+        margin-top: 20px;
+    }
+
+    .wp-image-1490 {
+
+        width: 2000px;
+        padding-top: 7px;
+    }
+
+    body.page-id-54 .elementor-54 .elementor-element.elementor-element-caf3ca9 img,
+    body.page-id-54 .elementor-54 .elementor-element.elementor-element-733cc0f img,
+    body.page-id-54 .elementor-54 .elementor-element.elementor-element-641db7a img,
+    body.page-id-54 .elementor-54 .elementor-element.elementor-element-0059d2b img {
+
+        width: 60%;
+    }
+
+    .button-group {
+
+        padding-left: 83px;
+        padding-top: 20px;
+
+    }
+
+    button.ok {
+
+        margin-right: 82px;
+
+    }
+}
+
+@media only screen and (max-width: 1159px) {
+
+    .form-group {
+
+        flex-direction: column;
+        column-gap: 0;
+        gap: 0;
+        padding-left: 45px;
+        padding-right: 45px;
+    }
+
+    input[type="text"] {
+
+        width: 100%;
+    }
+
+    body.page-id-54 input[type="submit"] {
+
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+
+    .nav-links {
+
+        flex-direction: column;
+        width: 100%;
+        left: 0;
+        background-color: #f2f2f2;
+        padding: 10px;
+        margin-top: -150px;
+    }
+
+    .nav-links li {
+
+        margin-bottom: 10px;
+        margin-left: 0;
+    }
+
+    .menu-logo {
+
+        width: 192px;
+        height: 19px;
+        padding-top: 0px;
+        padding-bottom: 30px;
+        padding-left: 10px;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    body.page-id-50 input[type="submit"] {
+
+        margin-left: 0;
+    }
+
+    body.page-id-54 input[type="submit"] {
+
+        margin-left: 0;
+    }
+
+    body.page-id-54 .elementor-54 .elementor-element.elementor-element-caf3ca9 img,
+    body.page-id-54 .elementor-54 .elementor-element.elementor-element-733cc0f img,
+    body.page-id-54 .elementor-54 .elementor-element.elementor-element-641db7a img,
+    body.page-id-54 .elementor-54 .elementor-element.elementor-element-0059d2b img {
+
+        width: 100%;
+    }
+
+    .reduced-spacing.footer-top-hidden #site-footer {
+
+        padding-top: 10px;
+        margin-top: 20px;
+    }
+
+    .wp-image-1490 {
+
+        width: 100%;
+        padding-top: 7px;
+    }
+}
+
